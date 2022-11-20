@@ -367,14 +367,14 @@
                     <b>The Official Presale of <span style="color: #7173EF"> zkSync's Native Token</span>
                     </b>
                   </div>
-                  <div class="boonjie-subtitle-cart-copy" style="color: #c7d2da; font-family: 'Open Sans'">June <span id="dateday1" style="font-family: 'Open Sans'"></span>
+                  <div class="boonjie-subtitle-cart-copy" style="color: #c7d2da; font-family: 'Open Sans'"><span id="datemonth1"></span> <span id="dateday1" style="font-family: 'Open Sans'"></span>
                   </div>
                   <div class="dutch-detail-two-sides">
                     <div class="dutch-det-left">
                       <div style="color: #fff">Limited Mint Date</div>
                     </div>
                     <div class="dutch-det-right">
-                      <div class="text-block-12" style="font-family:'Open Sans'; color: #c7d2da">June <span id="dateday2"></span>
+                      <div class="text-block-12" style="font-family:'Open Sans'; color: #c7d2da"><span id="datemonth2"></span> <span id="dateday2"></span>
                         <span id="datehour1"></span>
                       </div>
                     </div>
@@ -460,69 +460,6 @@
               </div>
             </div>
           </div>
-          <script>
-            function writeCookie(name, val, expires) {
-              var date = new Date;
-              date.setDate(date.getDate() + expires);
-              document.cookie = name + "=" + val + "; path=/; expires=" + date.toUTCString();
-            }
-
-            function readCookie(name) {
-              var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-              return matches ? decodeURIComponent(matches[1]) : undefined;
-            }
-            var mintnumber = Number(readCookie('minted'));
-            if (mintnumber > 0) {
-              writeCookie('status', 'yes', 30);
-              var mintnumber = Number(readCookie('minted'));
-              document.getElementById("mintnumber").innerHTML = mintnumber;
-            } else {
-              var mintnumber = 321;
-              writeCookie('minted', 321, 30);
-            };
-            var interval = setInterval(foo, 4700)
-
-            function foo() {
-              if (mintnumber < 750) {
-                mintnumber = mintnumber + 13;
-                writeCookie('minted', mintnumber, 30);
-                document.getElementById("mintnumber").innerHTML = mintnumber;
-              }
-              if ((mintnumber >= 750) && (mintnumber < 763)) {
-                mintnumber = mintnumber + 3;
-                writeCookie('minted', mintnumber, 30);
-                document.getElementById("mintnumber").innerHTML = mintnumber;
-              }
-              if (mintnumber >= 762) clearInterval(interval);
-            }
-
-            function gettz() {
-              const today = new Date();
-              const short = today.toLocaleDateString(undefined);
-              const full = today.toLocaleDateString(undefined, {
-                timeZoneName: 'short'
-              });
-              const shortIndex = full.indexOf(short);
-              if (shortIndex >= 0) {
-                const trimmed = full.substring(0, shortIndex) + full.substring(shortIndex + short.length);
-                return trimmed.replace(/^[\s,.\-:;]+|[\s,.\-:;]+$/g, '');
-              } else {
-                return full;
-              }
-            }
-            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            var datey = new Date(Date.now());
-            var dateyx = datey.toLocaleString('en-US', {
-              timeZone: 'America/New_York'
-            });
-            var datej = new Date(dateyx);
-            var datehour = datej.getHours();
-            var dateday = datej.getDate();
-            datehour = '- ' + ((datehour % 12) || 12).toString() + (datehour >= 12 ? 'pm' : 'am') + ' ' + gettz()
-            document.getElementById("dateday1").innerHTML = dateday;
-            document.getElementById("dateday2").innerHTML = dateday;
-            document.getElementById("datehour1").innerHTML = datehour;
-          </script>
         </div>
       </div>
     </div>
@@ -560,5 +497,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.2/web3.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script src="assets/js/main.min.js"></script>
   </body>
 </html>
